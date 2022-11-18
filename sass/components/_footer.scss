@@ -5,25 +5,35 @@
 }
 
 .footer__container {
-    // display: flex;
+    display: flex;
+    flex-direction: column;
     align-items: baseline;
 }
 
 .footer__box {
-    margin-right: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
 }
 
 .footer__form {
     margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .footer__logo-label {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .footer__item {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
         &:last-child {
             margin-bottom: 0;
         }
@@ -50,18 +60,29 @@
         }
 }
 
+.footer__social {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
 .footer__cta {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
     text-transform: uppercase;
     color: $colorWhitePrimary;
 }
 
+.submit-form {
+    
+}
+
 .submit-form__field {
-    width: 358px;
-    margin-right: 12px;
+    width: 450px;
+    margin-bottom: 20px;
     padding: 15px 16px;
     color: $colorWhitePrimary;
     background-color: inherit;
@@ -72,7 +93,7 @@
 
 .submit-form__button {
     @extend %button;
-    // display: inline-flex;
+    display: inline-flex;
     align-items: center;
     padding-left: 28px;
     padding-right: 28px;
