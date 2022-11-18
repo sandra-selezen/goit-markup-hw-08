@@ -37,10 +37,6 @@
         flex-wrap: wrap;
         gap: 30px;
         }
-
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        }
 }
 
 .features__item {
@@ -110,7 +106,6 @@
         }
 
     @media screen and (min-width: $desktop) {
-        display: flex;
         column-gap: 30px;
     }
 }
@@ -200,6 +195,4 @@
             fill: $colorAccentPrimary;
             border-color: $colorAccentPrimary;
         }
-
-
 }

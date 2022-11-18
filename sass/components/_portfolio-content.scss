@@ -1,11 +1,27 @@
-// .portfolio__list {
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: 30px;
-// }
+.portfolio__list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
 
 .portfolio__item {
     background-color: $colorWhitePrimary;
+    
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% / 2) - 15px);
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% / 3) - 30px);
+    }
 }
 
 .portfolio__link {
