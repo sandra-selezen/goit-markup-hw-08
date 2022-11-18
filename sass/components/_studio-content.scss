@@ -3,12 +3,17 @@
 .team__title,
 .clients__title,
 .portfolio__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     color: $colorTitle;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
 }
 
 .features__title--hidden,
@@ -27,8 +32,31 @@
 }
 
 .features__list {
-    display: flex;
-    column-gap: 30px;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        }
+}
+
+.features__item {
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% / 2) - 15px);
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 90px) / 4);
+    }
 }
 
 .features__box {
@@ -75,14 +103,38 @@
 }
 
 .team__list {
-    display: flex;
-    column-gap: 30px;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        column-gap: 30px;
+    }
 }
 
 .team__item {
+    padding-bottom: 24px;
     background-color: $colorWhitePrimary;
     box-shadow: $shadowBox;
     border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% / 2) - 15px);
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 90px) / 4);
+        padding-bottom: 30px;
+    }
 }
 
 .team__subtitle {
@@ -104,14 +156,33 @@
 }
 
 .team__social {
-    margin-bottom: 30px;
-    margin-left: 32px;
-    margin-right: 32px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .clients__list {
     display: flex;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (min-width: $desktop) {
+        flex-wrap: nowrap;
+        gap: 0;
+        column-gap: 30px;
+    }
+}
+
+.clients__item {
+    flex-basis: calc((100% / 2) - 15px);
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% / 3) - 20px);
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% / 6));
+    }
 }
 
 .clients__link {
@@ -119,7 +190,6 @@
     justify-content: center;
     align-items: center;
     height: 92px;
-    width: 170px;
     border: 1px solid $colorIcon;
     border-radius: 4px;
     fill: $colorIcon;
@@ -130,4 +200,6 @@
             fill: $colorAccentPrimary;
             border-color: $colorAccentPrimary;
         }
+
+
 }
