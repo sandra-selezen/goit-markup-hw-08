@@ -1,0 +1,90 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $colorBackgraundFooter;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__box {
+    margin-right: 70px;
+}
+
+.footer__form {
+    margin-left: auto;
+}
+
+.footer__logo-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__item {
+    margin-bottom: 9px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+}
+
+.footer__address {
+    color: $colorWhitePrimary;
+    transition: color $duration $timingFunction;
+    
+        &:hover,
+        &:focus {
+            color: $colorAccentPrimary;
+        }
+}
+
+.footer__contact {
+    margin-bottom: 9px;
+    color: $colorFooterContact;
+    transition: color $duration $timingFunction;
+    
+        &:hover,
+        &:focus {
+            color: $colorAccentPrimary;
+        }
+}
+
+.footer__cta {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $colorWhitePrimary;
+}
+
+.submit-form__field {
+    width: 358px;
+    margin-right: 12px;
+    padding: 15px 16px;
+    color: $colorWhitePrimary;
+    background-color: inherit;
+    border: 1px solid $colorFooterInput;
+    box-shadow: $shadowButton;
+    border-radius: 4px;
+}
+
+.submit-form__button {
+    @extend %button;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 28px;
+    fill: $colorWhitePrimary;
+    transition: background-color $duration $timingFunction;
+    
+        &:hover,
+        &:focus {
+            background-color: $colorAccentSecondary;
+        }
+}
+
+.submit-form__icon {
+    margin-left: 10px;
+}

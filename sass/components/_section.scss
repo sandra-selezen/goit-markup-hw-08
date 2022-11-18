@@ -1,0 +1,24 @@
+.section {
+    padding: 94px 0 94px 0;
+    background-color: $colorWhitePrimary;
+}
+
+.section--no-padding {
+    padding-top: 0;
+}
+
+.section--bgr-grey {
+    background-color: $colorWhiteSecondary;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio__button-set {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,133 @@
+.features__title,
+.about__title,
+.team__title,
+.clients__title,
+.portfolio__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: $colorTitle;
+}
+
+.features__title--hidden,
+.portfolio__title--hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.features__box {
+    margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: $colorWhiteSecondary;
+}
+
+.features__subtitle {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $colorTitle;
+}
+
+.about__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.about__box {
+    position: relative;
+}
+
+.about__text {
+    position: absolute;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $colorWhitePrimary;
+    background-color: $colorAboutBox;
+}
+
+.team__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.team__item {
+    background-color: $colorWhitePrimary;
+    box-shadow: $shadowBox;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team__subtitle {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    color: $colorTitle;
+}
+
+.team__text {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team__social {
+    margin-bottom: 30px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.clients__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 170px;
+    border: 1px solid $colorIcon;
+    border-radius: 4px;
+    fill: $colorIcon;
+    transition: fill $duration $timingFunction,
+    border $duration $timingFunction;
+
+        &:hover, &:focus {
+            fill: $colorAccentPrimary;
+            border-color: $colorAccentPrimary;
+        }
+}

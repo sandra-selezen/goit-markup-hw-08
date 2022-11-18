@@ -1,0 +1,44 @@
+.header {
+    border-bottom: 1px solid $colorHeaderLine;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.header__item {
+    margin-right: 50px;
+        &:last-child {
+            margin-right: 0;
+        }
+}
+
+.header__icon {
+    margin-right: 10px;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    fill: $colorText;
+    transition: color $duration $timingFunction;
+
+        &:hover, &:focus {
+            fill: $colorAccentPrimary;
+            color: $colorAccentPrimary;
+        }
+}

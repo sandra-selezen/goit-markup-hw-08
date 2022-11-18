@@ -1,0 +1,32 @@
+.social {
+    display: flex;
+    column-gap: 10px;
+}
+
+.social__link {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: $colorIcon;
+    transition: background-color $duration $timingFunction,
+    fill $duration $timingFunction;
+        
+        &:hover, &:focus {
+            fill: $colorWhitePrimary;
+            background-color: $colorAccentPrimary;
+        }
+}
+
+.social__link--white {
+    fill: $colorWhitePrimary;
+    background-color: $colorBackgraundIcon;
+    transition: background-color $duration $timingFunction;
+    
+        &:hover,
+        &:focus {
+            background-color: $colorAccentPrimary;
+        }
+}
