@@ -8,9 +8,13 @@
 }
 
 .header__list {
-    // display: flex;
+    display: flex;
     margin-left: auto;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .header__item {
