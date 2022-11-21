@@ -9,7 +9,7 @@
     padding-left: 40px;
     display: flex;
     flex-direction: column;
-    z-index: 999;
+    z-index: 5;
     transform: translateX(100%);
     transition: transform $duration $timingFunction;
     background-color: $colorWhitePrimary;
@@ -30,13 +30,15 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition: fill $duration $timingFunction;
+
+    &:hover, &:focus {
+        fill: $colorAccentPrimary;
+    }
 
     @media screen and (min-width: $tablet) {
         display: none;
     }
-}
-
-.mobile-menu-nav {
 }
 
 .mobile-menu-nav__item {
