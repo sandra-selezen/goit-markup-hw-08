@@ -19,14 +19,19 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 581px;
+    max-width: 450px;
+    width: 100%;
     padding: 40px;
     background-color: $colorWhitePrimary;
     box-shadow: $shadowBox;
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform $duration $timingFunction;
+
+    @media screen and (min-width: $desktop) {
+        max-width: 528px;
+        width: 100%;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -34,7 +39,11 @@
 }
 
 .modal__form {
-    width: 100%;
+    max-width: 370px;
+    
+    @media screen and (min-width: $desktop) {
+        max-width: 448px;
+    }
 }
 
 .form__button-close {
@@ -64,9 +73,13 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: $colorTitle;
+
+    @media screen and (min-width: $desktop) {
+        line-height: 1.15;
+    }
 }
 
 .form__field {
@@ -137,6 +150,13 @@
 .form__policy {
     display: flex;
     align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.7;
+    }
 }
 
 .form__icon-checkbox--hidden {
