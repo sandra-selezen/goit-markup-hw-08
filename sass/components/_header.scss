@@ -3,8 +3,8 @@
 }
 
 .header__container {
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .header__list {
@@ -15,13 +15,29 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        display: block;
+    }
 }
 
 .header__item {
-    margin-right: 50px;
+    @media screen and (min-width: $tablet) {
+        margin-right: 0;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 50px;
+    
         &:last-child {
             margin-right: 0;
         }
+        margin-bottom: 0;
+    }
 }
 
 .header__icon {
@@ -32,8 +48,6 @@
     // display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -44,5 +58,10 @@
         &:hover, &:focus {
             fill: $colorAccentPrimary;
             color: $colorAccentPrimary;
+        }
+
+        @media screen and (min-width: $desktop) {
+            padding-top: 32px;
+            padding-bottom: 32px;
         }
 }

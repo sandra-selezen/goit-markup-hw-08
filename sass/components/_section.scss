@@ -3,10 +3,6 @@
     background-color: $colorWhitePrimary;
 }
 
-// .section--no-padding {
-//     padding-top: 0;
-// }
-
 .section--bgr-grey {
     background-color: $colorWhiteSecondary;
 }
@@ -34,6 +30,10 @@
     @media screen and (max-width: 1190px) {
         display: none;
     }
+}
+
+.section--no-padding {
+    padding-top: 0;
 }
 
 .portfolio__button-set {

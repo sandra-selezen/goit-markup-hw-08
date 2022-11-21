@@ -1,27 +1,36 @@
 .hero {
-    max-width: 1600px;
-    height: 600px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
     text-align: center;
     background-color: $colorBackgraundHero;
-    background-image: linear-gradient(to right, $colorGradient, $colorGradient), url(..//../images/hero-img.jpg);
+    background-image: linear-gradient(to right, $colorGradient, $colorGradient), url(..//../images/hero-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
+    @media screen and (min-width: $desktop) {
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 .hero__title {
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.6;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: $colorWhitePrimary;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__button {

@@ -30,6 +30,10 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
 }
 
 .mobile-menu-nav {

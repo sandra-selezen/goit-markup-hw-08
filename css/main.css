@@ -99,6 +99,11 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
 
 .mobile-menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
@@ -175,13 +180,29 @@ body {
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .navigation__list {
-  margin-left: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 88px;
+}
+@media screen and (min-width: 1200px) {
+  .navigation__list {
+    margin-left: 93px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navigation__list {
+    display: none;
+  }
 }
 
 .navigation__item {
@@ -230,6 +251,15 @@ body {
   border-bottom: 1px solid #ECECEC;
 }
 
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,12 +274,29 @@ body {
     display: none;
   }
 }
-
-.header__item {
-  margin-right: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__list {
+    display: block;
+  }
 }
-.header__item:last-child {
-  margin-right: 0;
+
+@media screen and (min-width: 768px) {
+  .header__item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .header__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__item {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+  .header__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .header__icon {
@@ -263,8 +310,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -276,6 +321,12 @@ body {
 .header__contact:hover, .header__contact:focus {
   fill: #2196F3;
   color: #2196F3;
+}
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .logo-label {
@@ -306,29 +357,41 @@ body {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
   background-color: #C4C4C4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//../images/hero-img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//../images/hero-img.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//../images/hero-mobile@1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//../images/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -620,6 +683,10 @@ body {
   .about {
     display: none;
   }
+}
+
+.section--no-padding {
+  padding-top: 0;
 }
 
 .portfolio__button-set {
