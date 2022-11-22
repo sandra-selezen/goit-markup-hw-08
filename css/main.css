@@ -912,6 +912,19 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .team__image {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__image {
+    width: 270px;
+    height: 260px;
+  }
+}
+
 .team__subtitle {
   margin-top: 30px;
   margin-bottom: 10px;

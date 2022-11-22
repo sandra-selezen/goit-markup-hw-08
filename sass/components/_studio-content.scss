@@ -132,6 +132,18 @@
     }
 }
 
+.team__image {
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+        height: 374px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+        height: 260px;
+    }
+}
+
 .team__subtitle {
     margin-top: 30px;
     margin-bottom: 10px;
