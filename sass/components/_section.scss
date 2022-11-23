@@ -13,8 +13,8 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
+    @media screen and (max-width: 767px) {
+        max-width: 480px;
     }
 
     @media screen and (min-width: $tablet) {
