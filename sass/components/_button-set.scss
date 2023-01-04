@@ -44,3 +44,9 @@
             box-shadow: $shadowButtonSet;
         }
 }
+
+.button-set__button.active {
+    color: $colorWhitePrimary;
+    background-color: $colorAccentPrimary;
+    box-shadow: $shadowButtonSet;
+}

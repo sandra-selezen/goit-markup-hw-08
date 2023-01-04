@@ -54,15 +54,15 @@
         <div class="container">
             <h1 class="portfolio__title portfolio__title--hidden">Наші роботи</h1>
             <ul class="button-set portfolio__button-set">
-                <li class="button-set__item"><button class="button-set__button" type="button">Усі</button></li>
-                <li class="button-set__item"><button class="button-set__button" type="button">Веб-сайти</button></li>
-                <li class="button-set__item"><button class="button-set__button" type="button">Додатки</button></li>
-                <li class="button-set__item"><button class="button-set__button" type="button">Дизайн</button></li>
-                <li class="button-set__item"><button class="button-set__button" type="button">Маркетинг</button></li>
+                <li class="button-set__item"><button data-work-type="" class="button-set__button active" type="button">Усі</button></li>
+                <li class="button-set__item"><button data-work-type="website" class="button-set__button" type="button">Веб-сайти</button></li>
+                <li class="button-set__item"><button data-work-type="app" class="button-set__button" type="button">Додатки</button></li>
+                <li class="button-set__item"><button data-work-type="design" class="button-set__button" type="button">Дизайн</button></li>
+                <li class="button-set__item"><button data-work-type="marketing" class="button-set__button" type="button">Маркетинг</button></li>
             </ul>
             <ul class="portfolio__list">
-                <li class="portfolio__item">
-                    <a class="portfolio__link" href="">
+                <li data-work-type="website" class="portfolio__item">
+                    <a class="portfolio__link" href="#">
                         <div class="portfolio__box">
                             <picture>
                                 <source media="(min-width: 1200px)" srcset="./images/website-desktop@1x.jpg 1x, ./images/website-desktop@2x.jpg 2x">
@@ -78,8 +78,8 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio__item">
-                    <a class="portfolio__link" href="">
+                <li data-work-type="design" class="portfolio__item">
+                    <a class="portfolio__link" href="#">
                         <div class="portfolio__box">
                             <picture>
                                 <source media="(min-width: 1200px)" srcset="./images/basketball-desktop@1x.jpg 1x, ./images/basketball-desktop@2x.jpg 2x">
@@ -97,8 +97,8 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio__item">
-                    <a class="portfolio__link" href="">
+                <li data-work-type="app" class="portfolio__item">
+                    <a class="portfolio__link" href="#">
                         <div class="portfolio__box">
                             <picture>
                                 <source media="(min-width: 1200px)" srcset="./images/fish-desktop@1x.jpg 1x, ./images/fish-desktop@2x.jpg 2x">
@@ -116,8 +116,8 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio__item">
-                    <a class="portfolio__link" href="">
+                <li data-work-type="marketing" class="portfolio__item">
+                    <a class="portfolio__link" href="#">
                         <div class="portfolio__box">
                             <picture>
                                 <source media="(min-width: 1200px)" srcset="./images/headphone-desktop@1x.jpg 1x, ./images/headphone-desktop@2x.jpg 2x">
@@ -136,8 +136,8 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio__item">
-                    <a class="portfolio__link" href="">
+                <li data-work-type="app" class="portfolio__item">
+                    <a class="portfolio__link" href="#">
                         <div class="portfolio__box">
                             <picture>
                                 <source media="(min-width: 1200px)" srcset="./images/boxes-desktop@1x.jpg 1x, ./images/boxes-desktop@2x.jpg 2x">
@@ -156,8 +156,8 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio__item">
-                    <a class="portfolio__link" href="">
+                <li data-work-type="website" class="portfolio__item">
+                    <a class="portfolio__link" href="#">
                         <div class="portfolio__box">
                             <picture>
                                 <source media="(min-width: 1200px)" srcset="./images/pc-desktop@1x.jpg 1x, ./images/pc-desktop@2x.jpg 2x">
@@ -176,8 +176,8 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio__item">
-                    <a class="portfolio__link" href="">
+                <li data-work-type="design" class="portfolio__item">
+                    <a class="portfolio__link" href="#">
                         <div class="portfolio__box">
                             <picture>
                                 <source media="(min-width: 1200px)" srcset="./images/magazine-desktop@1x.jpg 1x, ./images/magazine-desktop@2x.jpg 2x">
@@ -196,8 +196,8 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio__item">
-                    <a class="portfolio__link" href="">
+                <li data-work-type="marketing" class="portfolio__item">
+                    <a class="portfolio__link" href="#">
                         <div class="portfolio__box">
                             <picture>
                                 <source media="(min-width: 1200px)" srcset="./images/tag-desktop@1x.jpg 1x, ./images/tag-desktop@2x.jpg 2x">
@@ -215,8 +215,8 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio__item">
-                    <a class="portfolio__link" href="">
+                <li data-work-type="app" class="portfolio__item">
+                    <a class="portfolio__link" href="#">
                         <div class="portfolio__box">
                             <picture>
                                 <source media="(min-width: 1200px)" srcset="./images/laptop-desktop@1x.jpg 1x, ./images/laptop-desktop@2x.jpg 2x">
@@ -346,5 +346,6 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filter.js"></script>
 </body>
 </html>
